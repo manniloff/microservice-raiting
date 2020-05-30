@@ -72,7 +72,7 @@ public class RatingServiceImpl implements RatingService {
     }
 
     @Override
-    public UserRating findAll(String userId) {
+    public UserRating findAllUserRating() {
         UserRating userRating = new UserRating();
         userRating.setRatingList(ratingRepository.findAll());
         return userRating;

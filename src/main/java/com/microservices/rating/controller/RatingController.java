@@ -46,8 +46,8 @@ public class RatingController {
         return ratingService.findByMovieId(movieId).get();
     }
 
-    @GetMapping(value = {"user/{userId}"}, produces = "application/json")
-    UserRating getRatingList(@PathVariable String userId) {
-        return ratingService.findAll(userId);
+    @GetMapping(value = {"/user"}, produces = "application/json")
+    UserRating getRatingList() {
+        return ratingService.findAllUserRating();
     }
 }

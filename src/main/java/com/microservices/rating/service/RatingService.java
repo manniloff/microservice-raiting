@@ -13,5 +13,5 @@ public interface RatingService {
     boolean update(Rating rating, int id);
     int deleteById(int id);
     Optional<Rating> findByMovieId(String movieId);
-    UserRating findAll(String userId);
+    UserRating findAllUserRating();
 }
